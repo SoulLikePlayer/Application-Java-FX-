@@ -79,7 +79,6 @@ public class FileTree extends Application {
                     } else {
                         Extension ex = new Extension(item.getValue());
                         ListeExtension.add(ex.extension);
-                        System.out.println(ListeExtension);
                         ListeExtension.remove(null);
                     }
                 }
@@ -89,30 +88,5 @@ public class FileTree extends Application {
 
     public static void main(String[] args) {
         launch(args);
-    }
-}
-class BeginPath extends Exception {
-    private final String cheminDeDebut;
-
-    BeginPath() {
-        Path desktopPath = Paths.get(System.getProperty("user.home"), "Desktop");
-        this.cheminDeDebut = desktopPath.toString() + File.separator;
-    }
-
-    public String getCheminDeDebut() {
-        return cheminDeDebut;
-    }
-}
-
-class Extension extends Exception{
-    private String[] document;
-    public String extension;
-    public Extension(String document){
-        try{
-            if(document.contains(".")) {
-                this.document = document.split("(?=[^.]+$)", 2);
-                extension = "." + this.document[1];
-            }
-        }catch(Exception e){}
     }
 }
