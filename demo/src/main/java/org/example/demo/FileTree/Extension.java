@@ -1,4 +1,4 @@
-package org.example.demo;
+package org.example.demo.FileTree;
 
 class Extension extends Exception{
     private String[] document;

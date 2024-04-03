@@ -1,4 +1,4 @@
-package org.example.demo;
+package org.example.demo.FileTree;
 
 import java.io.File;
 import java.nio.file.Path;
