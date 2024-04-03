@@ -1,4 +1,4 @@
-package org.example.demo;
+package org.example.demo.FileTree;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
