@@ -1,4 +1,4 @@
-package org.example.demo.FileTree;
+package org.example.demo;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -9,8 +9,6 @@ import javafx.scene.control.TreeView;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import java.io.File;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.HashSet;
 
 public class FileTree extends Application {
